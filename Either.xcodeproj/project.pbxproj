@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB5CFAD1A5F0EC000EAF7FE /* EitherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C038B51A2C012000C262C7 /* EitherType.swift */; };
+		BFB5CFAE1A5F0EC000EAF7FE /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C038B31A2C00BB00C262C7 /* Either.swift */; };
+		BFB5CFB01A5F0EC000EAF7FE /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BAF0451A2E86E3006E25DF /* Prelude.framework */; };
+		BFB5CFB11A5F0EC000EAF7FE /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C038B11A2C009A00C262C7 /* Box.framework */; };
+		BFB5CFB31A5F0EC000EAF7FE /* Either.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C038941A2BFF2300C262C7 /* Either.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4BAF0461A2E86E3006E25DF /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BAF0451A2E86E3006E25DF /* Prelude.framework */; };
 		D4C038951A2BFF2300C262C7 /* Either.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C038941A2BFF2300C262C7 /* Either.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C0389B1A2BFF2300C262C7 /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C0388F1A2BFF2300C262C7 /* Either.framework */; };
@@ -28,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFB5CFB81A5F0EC000EAF7FE /* Either.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Either.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BAF0451A2E86E3006E25DF /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Either-ahfeozcnnwhlpebposjtmhadcyik/Build/Products/Debug/Prelude.framework"; sourceTree = "<group>"; };
 		D4C0388F1A2BFF2300C262C7 /* Either.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Either.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C038931A2BFF2300C262C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +48,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BFB5CFAF1A5F0EC000EAF7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB5CFB01A5F0EC000EAF7FE /* Prelude.framework in Frameworks */,
+				BFB5CFB11A5F0EC000EAF7FE /* Box.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4C0388B1A2BFF2300C262C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +93,7 @@
 			children = (
 				D4C0388F1A2BFF2300C262C7 /* Either.framework */,
 				D4C0389A1A2BFF2300C262C7 /* EitherTests.xctest */,
+				BFB5CFB81A5F0EC000EAF7FE /* Either.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +138,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BFB5CFB21A5F0EC000EAF7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB5CFB31A5F0EC000EAF7FE /* Either.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4C0388C1A2BFF2300C262C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +157,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BFB5CFAB1A5F0EC000EAF7FE /* Either-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB5CFB51A5F0EC000EAF7FE /* Build configuration list for PBXNativeTarget "Either-iOS" */;
+			buildPhases = (
+				BFB5CFAC1A5F0EC000EAF7FE /* Sources */,
+				BFB5CFAF1A5F0EC000EAF7FE /* Frameworks */,
+				BFB5CFB21A5F0EC000EAF7FE /* Headers */,
+				BFB5CFB41A5F0EC000EAF7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Either-iOS";
+			productName = Either;
+			productReference = BFB5CFB81A5F0EC000EAF7FE /* Either.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D4C0388E1A2BFF2300C262C7 /* Either */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4C038A51A2BFF2300C262C7 /* Build configuration list for PBXNativeTarget "Either" */;
@@ -200,11 +242,19 @@
 			targets = (
 				D4C0388E1A2BFF2300C262C7 /* Either */,
 				D4C038991A2BFF2300C262C7 /* EitherTests */,
+				BFB5CFAB1A5F0EC000EAF7FE /* Either-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BFB5CFB41A5F0EC000EAF7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4C0388D1A2BFF2300C262C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +272,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BFB5CFAC1A5F0EC000EAF7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB5CFAD1A5F0EC000EAF7FE /* EitherType.swift in Sources */,
+				BFB5CFAE1A5F0EC000EAF7FE /* Either.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4C0388A1A2BFF2300C262C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +310,53 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BFB5CFB61A5F0EC000EAF7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Either-ahfeozcnnwhlpebposjtmhadcyik/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Either/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Either;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFB5CFB71A5F0EC000EAF7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Either-ahfeozcnnwhlpebposjtmhadcyik/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Either/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Either;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D4C038A31A2BFF2300C262C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BFB5CFB51A5F0EC000EAF7FE /* Build configuration list for PBXNativeTarget "Either-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB5CFB61A5F0EC000EAF7FE /* Debug */,
+				BFB5CFB71A5F0EC000EAF7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4C038891A2BFF2300C262C7 /* Build configuration list for PBXProject "Either" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
